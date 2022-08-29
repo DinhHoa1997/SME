@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Hoàng Long</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+  <meta name="theme-color" content="#0099ff" />
+  <meta http-equiv="Content-Language" content="VN" />
+  <meta name="description" content="Hoàng Long" />
+  <meta name="keywords" content="" />
+  <meta property="og:url" name="og:url" content="" data-app />
+  <meta property="og:type" name="og:type" content="website" data-app />
+  <meta property="og:description" name="og:description" content="Hoàng Long" data-app />
+  <meta property="og:title" name="og:title" content="Hoàng Long" data-app />
+  <meta property="og:image" name="og:image" content="http://tonvietphap.24h.co/uploaded/logo/logo.png" data-app />
+
+  <link href="/favicon.png" rel="shortcut icon" />
+
+  <link rel="stylesheet" type="text/css" href="/css/style.css?t=2" />
+
+  <link rel="stylesheet" type="text/css" href="/css/grid.css" />
+  <link rel="stylesheet" type="text/css" href="/css/responsive.css" />
+  <link rel="stylesheet" type="text/css" href="/css/swiper.css" />
+
+  <link rel="stylesheet" type="text/css" href="/css/font.css" />
+  <link rel="stylesheet" type="text/css" href="/css/fontawesome-5.12.1/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/jquery.mmenu.all.css" />
+  <link rel="stylesheet" href="/css/jquery-ui.css" />
+  <script src="/js/jquery-1.10.1.min.js"></script>
+  <script src="/js/swiper.min.js"></script>
+
+  <script src="/js/script.js"></script>
+  <script src="/js/jquery-ui.min.js"></script>
+  <script src="/js/jquery.form.min.js"></script>
+  <script src="/js/jquery.mmenu.min.all.js"></script>
+</head>
+
+<body>
+
+
+
+<div id="page">
+
+    <div class="top-header">
+        <div class="grid">
+            <div class="flex-container align-center">
+              <div class="cell-1-4">
+                <a href="#"> Nhập mã số lô hàng để tra cứu <i class="fas fa-chevron-right"></i></a>
+              </div>
+              <div class="cell-1-4">
+                <a href="#"> Nhập số điện thoại để yêu cầu báo giá <i class="fas fa-chevron-right"></i></a>
+              </div>
+              <div class="cell-2-4">
+                  <div class="header-left">
+                    <div class="lang">
+                     
+                      <a href="/" class="vi">Tiếng việt <i class="fas fa-chevron-down"></i></a>
+                      <!-- <a href="/en/" class="en">English</a> -->
+                    </div>
+                    <div class="icon-search" >
+                     Tìm kiếm <i class="fa fa-search search-icon" aria-hidden="true"></i>
+                        <div class="search-pc" style="">
+                         <form action="/search/" method="get" id="searchformtab">
+                            <input name="qr" class="kw-mobile" placeholder="Tìm kiếm " type="text">
+                            <a href="#" class="submit-search-pc" onClick="$('#searchformtab').submit(); return false;"> 
+                              <i class="fa fa-search" aria-hidden="true"></i> </a>
+      
+                            <a href="#" class="closeX" onClick="$('.search-pc').hide(); return false;">&#10005;</a>        
+                          </form>
+                        </div>
+                        
+                        <script type="text/javascript">
+                          $(document).ready(function () {
+                          $(".search-icon").click(function () {
+                            $(".search-pc").stop().slideToggle("fast");
+                            return false;
+                          });
+                          });
+                        </script>  	
+                    </div>
+                    <div class="dangky">
+                      <a href="#">Đăng ký</a>/ <a href="#">Đăng nhập</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <!-- header pc -->
+    <header class="header hide-on-pad hide-on-tab">
+      <div class="grid">
+
+        <div class="flex-container flex-space-between">
+          <div class="cell-2-12 flex_align">
+            <div class="logo">
+              <a href="/">
+                <img src="/uploaded/logo/logo.png" alt="LogoSite"
+                  style="max-width:100%; margin:0 auto"></a>
+            </div>
+          </div>
+
+          <div class="cell-10-12 flex_align--end">
+
+
+            <div class="menubar">
+              <ul class="nav  hide-on-mobile">
+
+
+                <li class="active"> <a href="/" class=""><span style="background-image:url()">Trang chủ  </span></a>
+                  
+                </li>
+                <li class=" "> <a href="/gioi-thieu/" class=""><span style="background-image:url()">Giới thiệu </span></a>
+                
+                
+                
+                
+                    <ul class="submnu1" style="display: none;">
+                        <li class=""><a href="/gioi-thieu-chung-1/">Giới thiệu chung</a>
+                        </li>
+                        <li class=""><a href="/chien-luoc-phat-trien/">Chiến lược phát triển</a>
+                        </li>
+                        <li class=""><a href="/van-hoa-doanh-nghiep/">Văn hoá doanh nghiệp</a>
+                        </li>
+                        <li class=""><a href="/co-cau-to-chuc/">Cơ cấu tổ chức</a>
+                        </li>
+                        <li class=""><a href="/ban-lanh-dao/">Ban lãnh đạo</a>
+                        </li>
+                    </ul>
+                    
+                    
+                    
+                </li>
+                <li class=" "> <a href="/linh-vuc-hoat-dong/" class=""><span style="background-image:url()">dịch vụ </span></a>
+                
+                
+                
+                
+                    <ul class="submnu1" style="display: none;">
+                        <li class=""><a href="/phat-trien-dien-nang/">Phát triển điện năng</a>
+                        </li>
+                        <li class=""><a href="/dau-tu-bat-dong-san/">Đầu tư Bất động sản</a>
+                        </li>
+                        <li class=""><a href="/dich-vu-khach-san/">Dịch vụ khách sạn</a>
+                        </li>
+                    </ul>
+                    
+                    
+                    
+                </li>
+                <li class=""> <a href="/cong-ty-thanh-vien/" class=""><span style="background-image:url()">Giải pháp </span></a>
+                </li>
+                <li class=" "> <a href="/tin-tuc-su-kien/" class=""><span style="background-image:url()">Hàng dự án </span></a>
+                </li>
+                <li class=" "> <a href="/du-an-dau-tu/" class=""><span style="background-image:url()">Tin tức </span></a> 
+                </li>
+                <li class=" "> <a href="/lien-he/" class=""><span style="background-image:url()">Sự kiện</span></a>  
+                </li>
+         
+                </ul>
+
+              <div class="c"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="c"></div>
+    </header>
+    <!-- end header pc -->
+    <header class="header hide-on-pc error">
+      
+    </header>
+    <!-- content -->
+    <div class="content">
+          <!-- slideshow -->
+          <div class="swiper-container" id="slide_home">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slidehome">
+                  <a href="">
+                    <img src="/uploaded/slideshow/slideshow-1.png" alt="" style="width: 100%" />
+                  </a>
+                    <div class="slidehome-content">
+                      <div class="grid">
+                          <div class="flex-container">
+                              <div class="cell-1-2 tab-cell-1-1">
+                                  <span>Direct to</span>
+                                  <h2>
+                                    EVERY DIRECTION
+                                  </h2>
+                                  <p>
+                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis minima itaque ex perferendis voluptatem optio magni officiis cum, mollitia consectetur, consequatur perspiciatis quaerat corporis deleniti voluptatum sint fugit nemo at.
+                                  </p>
+                                 
+                                  <div>
+                                     <a href="#" class="btn-xemthem">
+                                         Xem thêm <i class="fas fa-chevron-right"></i>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                 
+                  
+                </div>
+    
+              </div>
+              <div class="swiper-slide">
+                <div class="slidehome">
+                  <a href="">
+                    <img src="/uploaded/slideshow/slideshow-1.png" alt="" style="width: 100%" />
+                  </a>
+                    <div class="slidehome-content">
+                      <div class="grid">
+                          <div class="flex-container">
+                              <div class="cell-1-2 tab-cell-1-1">
+                                  <span>Direct to</span>
+                                  <h2>
+                                    EVERY DIRECTION
+                                  </h2>
+                                  <p>
+                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis minima itaque ex perferendis voluptatem optio magni officiis cum, mollitia consectetur, consequatur perspiciatis quaerat corporis deleniti voluptatum sint fugit nemo at.
+                                  </p>
+                                 
+                                  <div>
+                                     <a href="#" class="btn-xemthem">
+                                         Xem thêm <i class="fas fa-chevron-right"></i>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                 
+                  
+                </div>
+    
+              </div>
+              <div class="swiper-slide">
+                <div class="slidehome">
+                  <a href="">
+                    <img src="/uploaded/slideshow/slideshow-1.png" alt="" style="width: 100%" />
+                  </a>
+                    <div class="slidehome-content">
+                      <div class="grid">
+                          <div class="flex-container">
+                              <div class="cell-1-2 tab-cell-1-1">
+                                  <span>Direct to</span>
+                                  <h2>
+                                    EVERY DIRECTION
+                                  </h2>
+                                  <p>
+                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis minima itaque ex perferendis voluptatem optio magni officiis cum, mollitia consectetur, consequatur perspiciatis quaerat corporis deleniti voluptatum sint fugit nemo at.
+                                  </p>
+                                 
+                                  <div>
+                                     <a href="#" class="btn-xemthem">
+                                         Xem thêm <i class="fas fa-chevron-right"></i>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                 
+                  
+                </div>
+    
+              </div>
+            </div>
+            <div class="c"></div>
+            <script>
+              $(function () {
+                var swiper_slide_home = new Swiper("#slide_home", {
+                  loop: true,
+                  slidesPerView: 1,
+                  autoplay: {
+                    simulateTouch: true,
+                    delay: 5000000,
+                    disableOnInteraction: false,
+                  },
+                  spaceBetween: 0,
+                  navigation: {
+                    nextEl: ".homeslide-prev",
+                    prevEl: ".homeslide-next",
+                  },
+                  pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                  },
+                  speed: 500,
+                  spaceBetween: 0,
+                });
+    
+                $("#slide_home").on("mouseover", function () {
+                  swiper_slide_home.autoplay.stop();
+                });
+                $("#slide_home").on("mouseout", function () {
+                  swiper_slide_home.autoplay.start();
+                });
+              });
+            </script>
+            <div class="c"></div>
+          </div>
+          <!-- end slideshow -->
+
+          <!-- service -->
+          <div class="homeservice-wrapper">
+            <div class="c30"></div>
+            <div class="grid">
+              <div class="flex-container flex-centered">
+                <div class="cell-1-3">
+                    <h2 class="homecat-title--spc">
+                      <a href="">
+                      Dịch vụ từ SME logictic
+                      </a>
+                    </h2>
+                </div>
+                <div class="cell-2-3">
+                  <div class="homecat-intro">
+                    Được thành lập năm 2006, Công ty Cổ phần Tiếp vận Doanh nghiệp Nhỏ và Vừa Việt Nam (SME HOLDING Logistics) là thành viên của Hiệp hội Doanh nghiệp Nhỏ và Vừa Việt Nam, Hiệp hội Giao nhận Kho vận Việt Nam và Liên đoàn các hiệp hội Giao nhận Kho vận Quốc tế. SME cung cấp các giải pháp tối ưu cho ngành tiếp vận.
+                  </div>
+                </div>
+              </div>
+            
+
+              
+              
+             
+
+              <div class="flex-container">
+                <div class="cell-1-3">
+
+                </div>
+              </div>
+                <div class="c30"></div>
+              <div class="swiper-container" id="service_1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="homeservice-item">
+                      <a href="" class="img-shine">
+                        <img src="/uploaded/dich-vu/icondv1.png" alt="">
+                      </a>
+  
+                      <a href="" class="homeservice-item__name">
+                        Vận chuyển
+                        Hàng không Quốc tế
+                      </a>
+                     <div class="homeservice-intro text-line-4">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum veritatis 
+                     </div>
+                     <a href="#" class="btn-xemthem">
+                      Xem thêm <i class="fas fa-chevron-right"></i>
+                   </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="homeservice-item">
+                      <a href="" class="img-shine">
+                        <img src="/uploaded/dich-vu/icondv2.png" alt="">
+                      </a>
+  
+                      <a href="" class="homeservice-item__name">
+                        Vận chuyển
+                        Đường biển Quốc tế
+                      </a>
+                      <div class="homeservice-intro text-line-4">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat 
+                      </div>
+                      <a href="#" class="btn-xemthem">
+                        Xem thêm <i class="fas fa-chevron-right"></i>
+                     </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="homeservice-item">
+                      <a href="" class="img-shine">
+                        <img src="/uploaded/dich-vu/icondv3.png" alt="">
+                      </a>
+  
+                      <a href="" class="homeservice-item__name">
+                        Thủ tục & Đại lý Hải Quan
+                      </a>
+                    <div class="homeservice-intro text-line-4">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat 
+                    </div>
+                    <a href="#" class="btn-xemthem">
+                      Xem thêm <i class="fas fa-chevron-right"></i>
+                   </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="homeservice-item">
+                      <a href="" class="img-shine">
+                        <img src="/uploaded/dich-vu/icondv2.png" alt="">
+                      </a>
+  
+                      <a href="" class="homeservice-item__name">
+                        Vận chuyển
+                        Đường biển Quốc tế
+                      </a>
+                    <div class="homeservice-intro text-line-4">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat 
+                    </div>
+                    <a href="#" class="btn-xemthem">
+                      Xem thêm <i class="fas fa-chevron-right"></i>
+                   </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <script>
+                  var swiper_service_1 = new Swiper('#service_1', {
+                      slidesPerView: 3,
+                      autoplay: {
+                          delay: 6000,
+                          disableOnInteraction: false,
+                      },
+                      centerInsufficientSlides:true,
+                      navigation: {
+                          nextEl: '.service-next_100',
+                          prevEl: '.service-prev_100',
+                      },
+                          pagination: {
+                          el: ".swiper-pagination_100",
+                          clickable: true,
+                          },
+                      speed: 500,
+                      spaceBetween: 15,
+                      loop: true,
+                      breakpoints: {
+                          739: {
+                              slidesPerView: 1.1,
+                              spaceBetween: 5
+                          },
+                          1023: {
+                              slidesPerView: 2,
+                              spaceBetween: 10
+                          }
+                      }
+                  });
+
+              </script>
+
+
+            </div>
+          </div>
+          <!-- end service -->
+
+
+
+          <!-- dự án -->
+          <div class="homeduan-wrapper">
+            <div class="c30"></div>
+            <div class="c20 hide-on-mobile"></div>
+            <div class="c30"></div>
+            <div class="c20 hide-on-mobile"></div>
+            <div class="grid">
+              <h2 class="homecat-title--spc">
+                <a href="">
+                  Dự án Mới nhất
+                </a>
+              </h2>
+              <div class="swiper-container" id="duan_1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="homeduan-item">
+                      <a href="">
+                        <img src="/uploaded/du-an/item1.png" alt="">
+                      </a>
+                      <div class="homeduan-mask">
+                        <h3 class="homeduan-item__name">
+                          <a href="" class="text-line-2">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat 
+                          </a>
+                        </h3>
+                        <div class="homeduan-item__icon">
+                          <a href="#">
+                            <i class="fas fa-arrow-right"></i>
+                          </a>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="homeduan-item">
+                      <a href="">
+                        <img src="/uploaded/du-an/item2.png" alt="">
+                      </a>
+                      <div class="homeduan-mask">
+                        <h3 class="homeduan-item__name">
+                          <a href="" class="text-line-2">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat 
+                          </a>
+                        </h3>
+                        <div class="homeduan-item__icon">
+                          <a href="#">
+                            <i class="fas fa-arrow-right"></i>
+                          </a>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="homeduan-item">
+                      <a href="">
+                        <img src="/uploaded/du-an/item3.png" alt="">
+                      </a>
+                      <div class="homeduan-mask">
+                        <h3 class="homeduan-item__name">
+                          <a href="" class="text-line-2">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat 
+                          </a>
+                        </h3>
+                        <div class="homeduan-item__icon">
+                          <a href="#">
+                            <i class="fas fa-arrow-right"></i>
+                          </a>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="homeduan-item">
+                      <a href="">
+                        <img src="/uploaded/du-an/item2.png" alt="">
+                      </a>
+                      <div class="homeduan-mask">
+                        <h3 class="homeduan-item__name">
+                          <a href="" class="text-line-2">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat 
+                          </a>
+                        </h3>
+                        <div class="homeduan-item__icon">
+                            <a href="#">
+                              <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <script>
+                var swiper_service_1 = new Swiper('#duan_1', {
+                    slidesPerView: 3,
+                    autoplay: {
+                        delay: 100000,
+                        disableOnInteraction: false,
+                    },
+                    centerInsufficientSlides:true,
+                    navigation: {
+                        nextEl: '.service-next_100',
+                        prevEl: '.service-prev_100',
+                    },
+                        pagination: {
+                        el: ".swiper-pagination_100",
+                        clickable: true,
+                        },
+                    speed: 500,
+                    spaceBetween: 15,
+                    loop: true,
+                    breakpoints: {
+                        739: {
+                            slidesPerView: 1.1,
+                            spaceBetween: 5
+                        },
+                        1023: {
+                            slidesPerView: 2,
+                            spaceBetween: 10
+                        }
+                    }
+                });
+
+            </script>
+            </div>
+            <div class="c30"></div>
+            <div class="c20 hide-on-mobile"></div>
+            <div class="c30"></div>
+            <div class="c20 hide-on-mobile"></div>
+          
+          </div>
+
+          <!-- end dự án -->
+
+
+          <!-- tin tức -->
+          <!-- <div class="homenews-wrapper">
+            <div class="grid">
+              <h2 class="homecat-title">
+                <a href="">
+                  Tin tức
+                </a>
+              </h2>
+
+
+              
+              <div class="swiper-container" id="news_1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="news-item">
+                      <div class="img-page">
+                        <a class="hvr-grow" href="/tin-thi-truong/sapa-duoc-cong-nhan-la-khu-du-lich-quoc-gia.html"><img src="https://hoanglonggroupvn.vn/temp/-uploaded-tin-tuc_sapa-mapjpg-1512441006817-18-18-895-1580-crop-1512441018734_cr_420x255.jpg" width="100%" alt="Sapa được công nhận là khu du lịch quốc gia"></a>
+                        <div class="createdatehome">03-07-2019</div>
+                      </div>
+    
+                      <div class="intro-bg-news">
+                        <h3 class="news-name-home"><a href="/tin-thi-truong/sapa-duoc-cong-nhan-la-khu-du-lich-quoc-gia.html">Sapa được công nhận là khu du lịch quốc gia</a></h3>
+                        <div class="intro-news-home">Thủ tướng yêu cầu xây dựng những cơ chế chính sách phù hợp thúc đẩy du lịch Sapa phát triển bền vững theo đúng định hướng quy hoạch đã được duyệt.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <script>
+                  var swiper_news_1 = new Swiper('#news_1', {
+                      slidesPerView: 3,
+                      autoplay: {
+                          delay: 6000,
+                          disableOnInteraction: false,
+                      },
+                      centerInsufficientSlides:true,
+                      navigation: {
+                          nextEl: '.news-next_1',
+                          prevEl: '.news-prev_1',
+                      },
+                          pagination: {
+                          el: ".swiper-pagination_1",
+                          clickable: true,
+                          },
+                      speed: 500,
+                      spaceBetween: 30,
+                      loop: true,
+                      breakpoints: {
+                          739: {
+                              slidesPerView: 1,
+                              spaceBetween: 5
+                          },
+                          1023: {
+                              slidesPerView: 2,
+                              spaceBetween: 10
+                          }
+                      }
+                  });
+
+              </script>
+            </div>
+          </div> -->
+          <!-- end tin tức -->
+          
+
+
+          <!-- đối tác -->
+          <div class="homepartner-wrapper">
+            <div class="c30"></div>
+            <div class="c20 hide-on-mobile"></div>
+            <div class="grid">
+              <div class="flex-container align-center">
+                  <div class="cell-1-3 tab-cell-1-1">
+                    <h2 class="homecat-title">
+                      <a href="">
+                        MSC LOGICTICS LÀ THÀNH VIÊN CỦA
+                      </a>
+                    </h2>
+                  </div>
+                  <div class="cell-2-3 tab-cell-1-1">
+                      <div class="flex-container flex-centered">
+                          <div class="cell-1-4">
+                              <a href="#" class="hvr-float">
+                                <img src="/uploaded/logo/item1.png" alt="">
+                              </a>
+                          </div>
+                          <div class="cell-1-4">
+                            <a href="#" class="hvr-float">
+                              <img src="/uploaded/logo/item2.png" alt="">
+                            </a>
+                          </div>
+                          <div class="cell-1-4">
+                            <a href="#" class="hvr-float">
+                              <img src="/uploaded/logo/item3.png" alt="">
+                            </a>
+                          </div>
+                          <div class="cell-1-4">
+                            <a href="#" class="hvr-float">
+                              <img src="/uploaded/logo/item4.png" alt="">
+                            </a>
+                          </div>
+                          <div class="cell-1-4">
+                            <a href="#" class="hvr-float">
+                              <img src="/uploaded/logo/item5.png" alt="">
+                            </a>
+                          </div>
+                          <div class="cell-1-4">
+                            <a href="#" class="hvr-float">
+                              <img src="/uploaded/logo/item6.png" alt="">
+                            </a>
+                          </div>
+                          <div class="cell-1-4">
+                            <a href="#" class="hvr-float">
+                              <img src="/uploaded/logo/item7.png" alt="">
+                            </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+             
+            </div>
+            <div class="c30"></div>
+            
+            <div class="c20 hide-on-mobile"></div>
+            
+          </div>
+
+          <!-- end đối tác -->
+
+
+    </div>
+    <!-- end content -->
+
+
+    <div class="c"></div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="grid">
+          <div class="flex-container">
+            <div class="cell-1-5 tab-cell-1-1">
+              <div class="logo-footer">
+                <img src="/uploaded/logo/logo_white.png" alt="">
+              </div>
+              <div class="c30"></div>
+              <div class="c20 hide-on-mobile"></div>
+              
+              <div class="hide-on-mobile">
+                © 2022
+                <br> SME Logistics., JSC 
+                <br> nắm giữ bản quyền
+              </div>
+              
+            </div>
+
+            <div class="cell-2-5 tab-cell-1-1">
+              <div class="footer-block">
+                <div class="footer-title footer-title-mobile" rel="ct">
+                  Địa chỉ Trụ sở
+                </div>
+                <div class="info">
+                 <div> <i class="fas fa-map-marker-alt"></i></div> 
+                 <div> Tầng 3, Tòa nhà Vinaplast, 39A Ngô Quyền, Quận Hoàn Kiếm, Hà Nội</div>
+                </div>
+                <div class="info">
+                  <i class="fas fa-phone-alt"></i> +84 24 2220 6123
+                </div>
+                <div class="info">
+                  <i class="fas fa-fax"></i> +84 24 2220 6124
+                </div>
+                <div class="info">
+                  <i class="far fa-envelope"></i> support@smelogistics.vn
+                </div>
+              </div>
+            </div>
+            <div class="cell-1-5 tab-cell-1-1">
+              <div class="c10"></div>
+              <div class="footer-block">
+               
+                <ul class="menuboxfooter" id="boxcol20">
+                  <li><a href="#"> <i class="fa fa-angle-right"></i>Giới thiệu</a></li>
+                  <li><a href="#"> <i class="fa fa-angle-right"></i>Dịch vụ</a></li>
+                  <li><a href="#"> <i class="fa fa-angle-right"></i> Bệnh lý cột sống</a></li>
+                  <li><a href="#"> <i class="fa fa-angle-right"></i>Giải pháp</a></li>
+                  <li><a href="#"> <i class="fa fa-angle-right"></i> Hàng dự án</a></li>
+                </ul>
+              </div>
+            </div>
+            
+
+            <div class="cell-1-5 tab-cell-1-1">
+              <div class="footer-block">
+                <div class="footer-title footer-title-mobile" rel="ct">
+                  Gửi liên hệ
+                </div>
+               
+                <form action="" method="post" class="sendmail__frm">
+
+                  <input type="text" name="newsletter" class="sendmail__input" placeholder="Email">
+
+                  <button type="submit" name="addnewsletter" value="save" class="sendmail__btn">
+                    <i class="fas fa-arrow-right"></i>
+                  </button>
+                </form>
+                <div class="c30"></div>
+                <div class="footer-title footer-title-mobile" rel="ct">
+                 Kết nối với chúng tôi
+                </div>
+                <ul class="footer-social">
+                  <li>
+                    <a href="" class="footer-social__item hvr-float">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="footer-social__item hvr-float">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="footer-social__item hvr-float">
+                     <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="footer-social__item hvr-float">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+
+                </ul>
+
+
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- <div class="footer-copyright">
+        <div class="grid">
+      © Copyright 2019 Hoang Long Group. All rights reserved.
+        </div>
+      </div> -->
+
+    </footer>
+    <!-- end footer -->
+</div>
+
+
+  <link rel="stylesheet" href="/css/jquery.fancybox.css" />
+  <script src="/js/jquery.fancybox.js"></script>
+  <link rel="stylesheet" href="/css/hover.css" />
+
+
+
+ 
+
+  
+</body>
+
+</html>
+

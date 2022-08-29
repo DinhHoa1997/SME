@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Hoàng Long</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+  <meta name="theme-color" content="#0099ff" />
+  <meta http-equiv="Content-Language" content="VN" />
+  <meta name="description" content="Hoàng Long" />
+  <meta name="keywords" content="" />
+  <meta property="og:url" name="og:url" content="" data-app />
+  <meta property="og:type" name="og:type" content="website" data-app />
+  <meta property="og:description" name="og:description" content="Hoàng Long" data-app />
+  <meta property="og:title" name="og:title" content="Hoàng Long" data-app />
+  <meta property="og:image" name="og:image" content="http://tonvietphap.24h.co/uploaded/logo/logo.png" data-app />
+
+  <link href="/favicon.png" rel="shortcut icon" />
+
+  <link rel="stylesheet" type="text/css" href="/css/style.css?t=2" />
+
+  <link rel="stylesheet" type="text/css" href="/css/grid.css" />
+  <link rel="stylesheet" type="text/css" href="/css/responsive.css" />
+  <link rel="stylesheet" type="text/css" href="/css/swiper.css" />
+
+  <link rel="stylesheet" type="text/css" href="/css/font.css" />
+  <link rel="stylesheet" type="text/css" href="/css/fontawesome-5.12.1/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/jquery.mmenu.all.css" />
+  <link rel="stylesheet" href="/css/jquery-ui.css" />
+  <script src="/js/jquery-1.10.1.min.js"></script>
+  <script src="/js/swiper.min.js"></script>
+
+  <script src="/js/script.js"></script>
+  <script src="/js/jquery-ui.min.js"></script>
+  <script src="/js/jquery.form.min.js"></script>
+  <script src="/js/jquery.mmenu.min.all.js"></script>
+</head>
+
+<body>
+
+
+
+<div id="page">
+
+    <div class="top-header">
+        <div class="grid">
+            <div class="flex-container align-center">
+              <div class="cell-1-4">
+                <a href="#"> Nhập mã số lô hàng để tra cứu <i class="fas fa-chevron-right"></i></a>
+              </div>
+              <div class="cell-1-4">
+                <a href="#"> Nhập số điện thoại để yêu cầu báo giá <i class="fas fa-chevron-right"></i></a>
+              </div>
+              <div class="cell-2-4">
+                  <div class="header-left">
+                    <div class="lang">
+                     
+                      <a href="/" class="vi">Tiếng việt <i class="fas fa-chevron-down"></i></a>
+                      <!-- <a href="/en/" class="en">English</a> -->
+                    </div>
+                    <div class="icon-search" >
+                     Tìm kiếm <i class="fa fa-search search-icon" aria-hidden="true"></i>
+                        <div class="search-pc" style="">
+                         <form action="/search/" method="get" id="searchformtab">
+                            <input name="qr" class="kw-mobile" placeholder="Tìm kiếm " type="text">
+                            <a href="#" class="submit-search-pc" onClick="$('#searchformtab').submit(); return false;"> 
+                              <i class="fa fa-search" aria-hidden="true"></i> </a>
+      
+                            <a href="#" class="closeX" onClick="$('.search-pc').hide(); return false;">&#10005;</a>        
+                          </form>
+                        </div>
+                        
+                        <script type="text/javascript">
+                          $(document).ready(function () {
+                          $(".search-icon").click(function () {
+                            $(".search-pc").stop().slideToggle("fast");
+                            return false;
+                          });
+                          });
+                        </script>  	
+                    </div>
+                    <div class="dangky">
+                      <a href="#">Đăng ký</a>/ <a href="#">Đăng nhập</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <!-- header pc -->
+    <header class="header hide-on-pad hide-on-tab">
+      <div class="grid">
+
+        <div class="flex-container flex-space-between">
+          <div class="cell-2-12 flex_align">
+            <div class="logo">
+              <a href="/">
+                <img src="/uploaded/logo/logo.png" alt="LogoSite"
+                  style="max-width:100%; margin:0 auto"></a>
+            </div>
+          </div>
+
+          <div class="cell-10-12 flex_align--end">
+
+
+            <div class="menubar">
+              <ul class="nav  hide-on-mobile">
+
+
+                <li class="active"> <a href="/" class=""><span style="background-image:url()">Trang chủ  </span></a>
+                  
+                </li>
+                <li class=" "> <a href="/gioi-thieu/" class=""><span style="background-image:url()">Giới thiệu </span></a>
+                
+                
+                
+                
+                    <ul class="submnu1" style="display: none;">
+                        <li class=""><a href="/gioi-thieu-chung-1/">Giới thiệu chung</a>
+                        </li>
+                        <li class=""><a href="/chien-luoc-phat-trien/">Chiến lược phát triển</a>
+                        </li>
+                        <li class=""><a href="/van-hoa-doanh-nghiep/">Văn hoá doanh nghiệp</a>
+                        </li>
+                        <li class=""><a href="/co-cau-to-chuc/">Cơ cấu tổ chức</a>
+                        </li>
+                        <li class=""><a href="/ban-lanh-dao/">Ban lãnh đạo</a>
+                        </li>
+                    </ul>
+                    
+                    
+                    
+                </li>
+                <li class=" "> <a href="/linh-vuc-hoat-dong/" class=""><span style="background-image:url()">dịch vụ </span></a>
+                
+                
+                
+                
+                    <ul class="submnu1" style="display: none;">
+                        <li class=""><a href="/phat-trien-dien-nang/">Phát triển điện năng</a>
+                        </li>
+                        <li class=""><a href="/dau-tu-bat-dong-san/">Đầu tư Bất động sản</a>
+                        </li>
+                        <li class=""><a href="/dich-vu-khach-san/">Dịch vụ khách sạn</a>
+                        </li>
+                    </ul>
+                    
+                    
+                    
+                </li>
+                <li class=""> <a href="/cong-ty-thanh-vien/" class=""><span style="background-image:url()">Giải pháp </span></a>
+                </li>
+                <li class=" "> <a href="/tin-tuc-su-kien/" class=""><span style="background-image:url()">Hàng dự án </span></a>
+                </li>
+                <li class=" "> <a href="/du-an-dau-tu/" class=""><span style="background-image:url()">Tin tức </span></a> 
+                </li>
+                <li class=" "> <a href="/lien-he/" class=""><span style="background-image:url()">Sự kiện</span></a>  
+                </li>
+         
+                </ul>
+
+              <div class="c"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="c"></div>
+    </header>
+    <!-- end header pc -->
+    <header class="header hide-on-pc error">
+      
+    </header>
+    <!-- content -->
+    <div class="content">
+          <!-- slideshow -->
+          <div class="img-poster" style="position:relative">
+
+
+
+            <a class="hide-on-tab" href="">
+                <img src="/uploaded/background/about.jpg" alt="" width="100%"/>
+            </a>
+        
+            <div class="catname">
+               <div class="grid">
+                <h1>Tuyển dụng</h1>
+               </div>
+            </div>
+        </div>
+        
+        <div class="td-wrapper">
+            <div class="c30"></div>
+            <div class="c20 hide-on-mobile"></div>
+            <div class="c30"></div>
+            <div class="c20 hide-on-mobile"></div>
+            <div class="grid">
+                <div class="td-item">
+                    <div class="td-date">
+                        03/05
+                        2022
+                    </div>
+                    <div class="td-content show-more-height" >
+                        <div class="c30"></div>
+                        <a class="title" href="#">NHÂN VIÊN & CHUYÊN VIÊN PHÁT TRIỂN KINH DOANH LOGISTICS
+                        </a>
+
+                        <div class="flex-container">
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                    Nơi làm việc:
+                                </div>
+                                <div class="ct">
+                                    Hà Nội
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                Mức lương:
+                                </div>
+                                <div class="ct">
+                                    8.000.000 - 12.000.000 VND
+                                    (Tùy theo kinh nghiệm)
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                    Số lượng:
+                                </div>
+                                <div class="ct">
+                                    3
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                   Hạn nộp hồ sơ:
+                                </div>
+                                <div class="ct">
+                                  30/08/2022
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-container">
+                                <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                    Kinh nghiệm:
+                                </div>
+                                <div class="ct">
+                                    Có kinh nghiệm 01 năm làm ở vị trí Chứng từ;
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                    Yêu cầu bằng cấp:
+                                </div>
+                                <div class="ct">
+                                    Tốt nghiệp Đại học trở lên chuyên ngành: Logisitics, Hải quan, Xuất nhập khẩu, Kinh doanh Quốc tế…;
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                    Thời gian thử việc:
+                                </div>
+                                <div class="ct">
+                                    3 tháng
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                    Giờ làm việc:
+                                </div>
+                                <div class="ct">
+                                 Hành chính
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                   Yêu cầu giới tính
+                                </div>
+                                <div class="ct">
+                                    Không
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                    Yêu cầu  độ tuổi
+                                </div>
+                                <div class="ct">
+                                    Không
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                   Thông tin liên hệ
+                                </div>
+                                <div class="ct">
+                                    Ms Vân 0976.632.218 (Phụ trách tuyển dụng)
+                                </div>
+                            </div>
+                            <div class="cell-1-1 tab-cell-1-2">
+                                <div class="td-title">
+                                  Mô tả công việc:
+                                </div>
+                                <div class="ct">
+                                    CUSTOMER SERVICE NGÀNH LOGISTICS
+                                    Địa điểm làm việc: Quận Hoàn Kiếm, Hà Nội <br>
+                                    Số lượng: 03 <br>
+                                    Mô tả công việc <br>
+                                    <br>– Liên hệ với khách hàng của công ty để thực hiện những yêu cầu và thực hiện các yêu cầu của khách hàng nhanh nhất có thể.
+                                    <br>– Tìm kiếm mở rộng khách hàng.
+                                    <br>– Hiểu rõ tình hình thị trường cũng như đối thủ cạnh tranh.
+                                    <br>– Lên báo giá cho khách hàng, đại lý nước ngoài.
+                                    <br>– Giải quyết các vấn đề phát sinh với khách hàng, đại lý, nhà cung cấp.
+                                    <br>– Tạo Estimate Job và đảm bảo tỉ lệ lợi nhuận theo quy định công ty.
+                                    <br>– Theo dõi và nhắc nhở khách hàng thanh toán đúng thời hạn.
+                                    Yêu cầu
+                                    <br>– Có kinh nghiệm 01 năm làm ở vị trí Chứng từ;
+                                    <br>– Tốt nghiệp Đại học trở lên chuyên ngành: Logisitics, Hải quan, Xuất nhập khẩu, Kinh doanh Quốc tế…;
+                                    <br>– Ngoại hình: Ưa nhìn
+                                    <br>– Trung thực, cẩn thận, chăm chỉ, tận tâm, không ngại khó;
+                                    <br>– Cầu tiến, ham học hỏi.
+                                    Quyền lợi
+                                   <br> – Công ty tạo mọi điều kiện hỗ trợ, đào tạo phát triển sự nghiệp. Công ty với hơn 15 năm xây dựng và phát triển, đội ngũ lãnh đạo nhiều năm kinh nghiệm tham vấn.
+                                   <br> – Lương: 8.000.000 – 16.000.000 vnđ (theo kinh nghiệm)
+                                   <br> – Tăng lương định kỳ, lương tháng thứ 13++, thưởng lễ Tết…
+                                   <br> – Tham quan du lịch, teambuilding hàng năm….
+                                   <br> – Cơ hội làm việc với các khách hàng, đối tác là tập đoàn công ty lớn (Th True Milk, Trung Nguyên, Vinfast,…)
+                                   <br> – Du lịch hàng năm cùng công ty.
+                                   <br> – Thưởng lương tháng 13; thưởng lễ, tết, sinh nhật, hoàn thành xuất sắc công việc được giao…
+                                   <br> – Tham gia đầy đủ BHXH, BHYT và BHTN theo quy định của Luật lao động
+                                    Được làm việc trong môi trường doanh nghiệp bền vững – vui vẻ – gắn kết, cơ hội phát triển thăng tiến rộng mở.
+                                    Thông tin Liên hệ
+                                    Email: hr@smelogistics.vn
+                                    Tiêu đề mail: {Tên + Vị trí ứng tuyển}
+                                    Zalo: 0976 632 218 (Phụ trách nhân sự)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c30"></div>
+                        <div class="flex-container flex-centered">
+                            <div class="dowload">
+                                <a href="#">Tải hồ sơ ứng tuyển</a>
+                            </div>
+                            <div class="upload">
+                                <a href="#">Nộp đơn ứng tuyển</a>
+                            </div>
+                        </div>
+                        <div class="c30"></div>
+                    </div>
+                    <div class="show-more">Show More <br> <i class="fas fa-chevron-up"></i> <br> </div>
+                </div>
+                <div class="td-item">
+                    <div class="td-date">
+                        03/05
+                        2022
+                    </div>
+                    <div class="td-content show-more-height" >
+                        <div class="c30"></div>
+                        <a class="title" href="#">NHÂN VIÊN & CHUYÊN VIÊN PHÁT TRIỂN KINH DOANH LOGISTICS
+                        </a>
+
+                        <div class="flex-container">
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                    Nơi làm việc:
+                                </div>
+                                <div class="ct">
+                                    Hà Nội
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                Mức lương:
+                                </div>
+                                <div class="ct">
+                                    8.000.000 - 12.000.000 VND
+                                    (Tùy theo kinh nghiệm)
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                    Số lượng:
+                                </div>
+                                <div class="ct">
+                                    3
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                   Hạn nộp hồ sơ:
+                                </div>
+                                <div class="ct">
+                                  30/08/2022
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-container">
+                                <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                    Kinh nghiệm:
+                                </div>
+                                <div class="ct">
+                                    Có kinh nghiệm 01 năm làm ở vị trí Chứng từ;
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                    Yêu cầu bằng cấp:
+                                </div>
+                                <div class="ct">
+                                    Tốt nghiệp Đại học trở lên chuyên ngành: Logisitics, Hải quan, Xuất nhập khẩu, Kinh doanh Quốc tế…;
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                    Thời gian thử việc:
+                                </div>
+                                <div class="ct">
+                                    3 tháng
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                    Giờ làm việc:
+                                </div>
+                                <div class="ct">
+                                 Hành chính
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                   Yêu cầu giới tính
+                                </div>
+                                <div class="ct">
+                                    Không
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                    Yêu cầu  độ tuổi
+                                </div>
+                                <div class="ct">
+                                    Không
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                   Thông tin liên hệ
+                                </div>
+                                <div class="ct">
+                                    Ms Vân 0976.632.218 (Phụ trách tuyển dụng)
+                                </div>
+                            </div>
+                            <div class="cell-1-1 tab-cell-1-2">
+                                <div class="td-title">
+                                  Mô tả công việc:
+                                </div>
+                                <div class="ct">
+                                    CUSTOMER SERVICE NGÀNH LOGISTICS
+                                    Địa điểm làm việc: Quận Hoàn Kiếm, Hà Nội <br>
+                                    Số lượng: 03 <br>
+                                    Mô tả công việc <br>
+                                    <br>– Liên hệ với khách hàng của công ty để thực hiện những yêu cầu và thực hiện các yêu cầu của khách hàng nhanh nhất có thể.
+                                    <br>– Tìm kiếm mở rộng khách hàng.
+                                    <br>– Hiểu rõ tình hình thị trường cũng như đối thủ cạnh tranh.
+                                    <br>– Lên báo giá cho khách hàng, đại lý nước ngoài.
+                                    <br>– Giải quyết các vấn đề phát sinh với khách hàng, đại lý, nhà cung cấp.
+                                    <br>– Tạo Estimate Job và đảm bảo tỉ lệ lợi nhuận theo quy định công ty.
+                                    <br>– Theo dõi và nhắc nhở khách hàng thanh toán đúng thời hạn.
+                                    Yêu cầu
+                                    <br>– Có kinh nghiệm 01 năm làm ở vị trí Chứng từ;
+                                    <br>– Tốt nghiệp Đại học trở lên chuyên ngành: Logisitics, Hải quan, Xuất nhập khẩu, Kinh doanh Quốc tế…;
+                                    <br>– Ngoại hình: Ưa nhìn
+                                    <br>– Trung thực, cẩn thận, chăm chỉ, tận tâm, không ngại khó;
+                                    <br>– Cầu tiến, ham học hỏi.
+                                    Quyền lợi
+                                   <br> – Công ty tạo mọi điều kiện hỗ trợ, đào tạo phát triển sự nghiệp. Công ty với hơn 15 năm xây dựng và phát triển, đội ngũ lãnh đạo nhiều năm kinh nghiệm tham vấn.
+                                   <br> – Lương: 8.000.000 – 16.000.000 vnđ (theo kinh nghiệm)
+                                   <br> – Tăng lương định kỳ, lương tháng thứ 13++, thưởng lễ Tết…
+                                   <br> – Tham quan du lịch, teambuilding hàng năm….
+                                   <br> – Cơ hội làm việc với các khách hàng, đối tác là tập đoàn công ty lớn (Th True Milk, Trung Nguyên, Vinfast,…)
+                                   <br> – Du lịch hàng năm cùng công ty.
+                                   <br> – Thưởng lương tháng 13; thưởng lễ, tết, sinh nhật, hoàn thành xuất sắc công việc được giao…
+                                   <br> – Tham gia đầy đủ BHXH, BHYT và BHTN theo quy định của Luật lao động
+                                    Được làm việc trong môi trường doanh nghiệp bền vững – vui vẻ – gắn kết, cơ hội phát triển thăng tiến rộng mở.
+                                    Thông tin Liên hệ
+                                    Email: hr@smelogistics.vn
+                                    Tiêu đề mail: {Tên + Vị trí ứng tuyển}
+                                    Zalo: 0976 632 218 (Phụ trách nhân sự)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c30"></div>
+                        <div class="flex-container flex-centered">
+                            <div class="dowload">
+                                <a href="#">Tải mẫu hồ sơ ứng tuyển</a>
+                            </div>
+                            <div class="upload">
+                                <a href="#">Nộp đơn ứng tuyển</a>
+                            </div>
+                        </div>
+                        <div class="c30"></div>
+                    </div>
+                    <div class="show-more">Show More <br> <i class='fas fa-chevron-down'></i> <br> </div>
+                </div>
+               
+                <div class="td-item">
+                    <div class="td-date">
+                        03/05
+                        2022
+                    </div>
+                    <div class="td-content show-more-height" >
+                        <div class="c30"></div>
+                        <a class="title" href="#">NHÂN VIÊN & CHUYÊN VIÊN PHÁT TRIỂN KINH DOANH LOGISTICS
+                        </a>
+
+                        <div class="flex-container">
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                    Nơi làm việc:
+                                </div>
+                                <div class="ct">
+                                    Hà Nội
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                Mức lương:
+                                </div>
+                                <div class="ct">
+                                    8.000.000 - 12.000.000 VND
+                                    (Tùy theo kinh nghiệm)
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                    Số lượng:
+                                </div>
+                                <div class="ct">
+                                    3
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                   Hạn nộp hồ sơ:
+                                </div>
+                                <div class="ct">
+                                  30/08/2022
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-container">
+                                <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                    Kinh nghiệm:
+                                </div>
+                                <div class="ct">
+                                    Có kinh nghiệm 01 năm làm ở vị trí Chứng từ;
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                    Yêu cầu bằng cấp:
+                                </div>
+                                <div class="ct">
+                                    Tốt nghiệp Đại học trở lên chuyên ngành: Logisitics, Hải quan, Xuất nhập khẩu, Kinh doanh Quốc tế…;
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                    Thời gian thử việc:
+                                </div>
+                                <div class="ct">
+                                    3 tháng
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                    Giờ làm việc:
+                                </div>
+                                <div class="ct">
+                                 Hành chính
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                   Yêu cầu giới tính
+                                </div>
+                                <div class="ct">
+                                    Không
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                    Yêu cầu  độ tuổi
+                                </div>
+                                <div class="ct">
+                                    Không
+                                </div>
+                            </div>
+                            <div class="cell-1-4 tab-cell-1-2">
+                                <div class="td-title">
+                                   Thông tin liên hệ
+                                </div>
+                                <div class="ct">
+                                    Ms Vân 0976.632.218 (Phụ trách tuyển dụng)
+                                </div>
+                            </div>
+                            <div class="cell-1-1 tab-cell-1-2">
+                                <div class="td-title">
+                                  Mô tả công việc:
+                                </div>
+                                <div class="ct">
+                                    CUSTOMER SERVICE NGÀNH LOGISTICS
+                                    Địa điểm làm việc: Quận Hoàn Kiếm, Hà Nội <br>
+                                    Số lượng: 03 <br>
+                                    Mô tả công việc <br>
+                                    <br>– Liên hệ với khách hàng của công ty để thực hiện những yêu cầu và thực hiện các yêu cầu của khách hàng nhanh nhất có thể.
+                                    <br>– Tìm kiếm mở rộng khách hàng.
+                                    <br>– Hiểu rõ tình hình thị trường cũng như đối thủ cạnh tranh.
+                                    <br>– Lên báo giá cho khách hàng, đại lý nước ngoài.
+                                    <br>– Giải quyết các vấn đề phát sinh với khách hàng, đại lý, nhà cung cấp.
+                                    <br>– Tạo Estimate Job và đảm bảo tỉ lệ lợi nhuận theo quy định công ty.
+                                    <br>– Theo dõi và nhắc nhở khách hàng thanh toán đúng thời hạn.
+                                    Yêu cầu
+                                    <br>– Có kinh nghiệm 01 năm làm ở vị trí Chứng từ;
+                                    <br>– Tốt nghiệp Đại học trở lên chuyên ngành: Logisitics, Hải quan, Xuất nhập khẩu, Kinh doanh Quốc tế…;
+                                    <br>– Ngoại hình: Ưa nhìn
+                                    <br>– Trung thực, cẩn thận, chăm chỉ, tận tâm, không ngại khó;
+                                    <br>– Cầu tiến, ham học hỏi.
+                                    Quyền lợi
+                                   <br> – Công ty tạo mọi điều kiện hỗ trợ, đào tạo phát triển sự nghiệp. Công ty với hơn 15 năm xây dựng và phát triển, đội ngũ lãnh đạo nhiều năm kinh nghiệm tham vấn.
+                                   <br> – Lương: 8.000.000 – 16.000.000 vnđ (theo kinh nghiệm)
+                                   <br> – Tăng lương định kỳ, lương tháng thứ 13++, thưởng lễ Tết…
+                                   <br> – Tham quan du lịch, teambuilding hàng năm….
+                                   <br> – Cơ hội làm việc với các khách hàng, đối tác là tập đoàn công ty lớn (Th True Milk, Trung Nguyên, Vinfast,…)
+                                   <br> – Du lịch hàng năm cùng công ty.
+                                   <br> – Thưởng lương tháng 13; thưởng lễ, tết, sinh nhật, hoàn thành xuất sắc công việc được giao…
+                                   <br> – Tham gia đầy đủ BHXH, BHYT và BHTN theo quy định của Luật lao động
+                                    Được làm việc trong môi trường doanh nghiệp bền vững – vui vẻ – gắn kết, cơ hội phát triển thăng tiến rộng mở.
+                                    Thông tin Liên hệ
+                                    Email: hr@smelogistics.vn
+                                    Tiêu đề mail: {Tên + Vị trí ứng tuyển}
+                                    Zalo: 0976 632 218 (Phụ trách nhân sự)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c30"></div>
+                        <div class="flex-container flex-centered">
+                            <div class="dowload">
+                                <a href="#">Tải hồ sơ ứng tuyển</a>
+                            </div>
+                            <div class="upload">
+                                <a href="#">Nộp đơn ứng tuyển</a>
+                            </div>
+                        </div>
+                        <div class="c30"></div>
+                    </div>
+                    <div class="c30"></div>
+                    <div class="show-more">Show More <br> <i class="fas fa-chevron-down"></i> <br> </div>
+                </div>
+               
+                
+            </div>
+            <script>
+                $(".show-more").click(function () {
+                    if($(".td-content ").hasClass("show-more-height")) {
+                        $(this).html("Show Less  <br>  <i class='fas fa-chevron-up'></i)");
+                    } else {
+                        $(this).html("Show More <br> <i class='fas fa-chevron-down'></i> ");
+                    }
+
+                    $(".td-content ").toggleClass("show-more-height");
+                });
+        </script>
+            <div class="c30"></div>
+            
+        </div>
+        <div class="c50"></div>
+
+        
+    </div>
+    <!-- end content -->
+
+
+    <div class="c"></div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="grid">
+          <div class="flex-container">
+            <div class="cell-1-5 tab-cell-1-1">
+              <div class="logo-footer">
+                <img src="/uploaded/logo/logo_white.png" alt="">
+              </div>
+              <div class="c30"></div>
+              <div class="c20 hide-on-mobile"></div>
+              
+              <div class="hide-on-mobile">
+                © 2022
+                <br> SME Logistics., JSC 
+                <br> nắm giữ bản quyền
+              </div>
+              
+            </div>
+
+            <div class="cell-2-5 tab-cell-1-1">
+              <div class="footer-block">
+                <div class="footer-title footer-title-mobile" rel="ct">
+                  Địa chỉ Trụ sở
+                </div>
+                <div class="info">
+                 <div> <i class="fas fa-map-marker-alt"></i></div> 
+                 <div> Tầng 3, Tòa nhà Vinaplast, 39A Ngô Quyền, Quận Hoàn Kiếm, Hà Nội</div>
+                </div>
+                <div class="info">
+                  <i class="fas fa-phone-alt"></i> +84 24 2220 6123
+                </div>
+                <div class="info">
+                  <i class="fas fa-fax"></i> +84 24 2220 6124
+                </div>
+                <div class="info">
+                  <i class="far fa-envelope"></i> support@smelogistics.vn
+                </div>
+              </div>
+            </div>
+            <div class="cell-1-5 tab-cell-1-1">
+              <div class="c10"></div>
+              <div class="footer-block">
+               
+                <ul class="menuboxfooter" id="boxcol20">
+                  <li><a href="#"> <i class="fa fa-angle-right"></i>Giới thiệu</a></li>
+                  <li><a href="#"> <i class="fa fa-angle-right"></i>Dịch vụ</a></li>
+                  <li><a href="#"> <i class="fa fa-angle-right"></i> Bệnh lý cột sống</a></li>
+                  <li><a href="#"> <i class="fa fa-angle-right"></i>Giải pháp</a></li>
+                  <li><a href="#"> <i class="fa fa-angle-right"></i> Hàng dự án</a></li>
+                </ul>
+              </div>
+            </div>
+            
+
+            <div class="cell-1-5 tab-cell-1-1">
+              <div class="footer-block">
+                <div class="footer-title footer-title-mobile" rel="ct">
+                  Gửi liên hệ
+                </div>
+               
+                <form action="" method="post" class="sendmail__frm">
+
+                  <input type="text" name="newsletter" class="sendmail__input" placeholder="Email">
+
+                  <button type="submit" name="addnewsletter" value="save" class="sendmail__btn">
+                    <i class="fas fa-arrow-right"></i>
+                  </button>
+                </form>
+                <div class="c30"></div>
+                <div class="footer-title footer-title-mobile" rel="ct">
+                 Kết nối với chúng tôi
+                </div>
+                <ul class="footer-social">
+                  <li>
+                    <a href="" class="footer-social__item hvr-float">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="footer-social__item hvr-float">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="footer-social__item hvr-float">
+                     <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="footer-social__item hvr-float">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+
+                </ul>
+
+
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- <div class="footer-copyright">
+        <div class="grid">
+      © Copyright 2019 Hoang Long Group. All rights reserved.
+        </div>
+      </div> -->
+
+    </footer>
+    <!-- end footer -->
+</div>
+
+
+  <link rel="stylesheet" href="/css/jquery.fancybox.css" />
+  <script src="/js/jquery.fancybox.js"></script>
+  <link rel="stylesheet" href="/css/hover.css" />
+
+
+
+ 
+
+  
+</body>
+
+</html>
+
