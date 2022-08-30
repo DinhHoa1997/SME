@@ -6,6 +6,7 @@ body {
   margin: 0px;
   color: #222;
   line-height: 1.6;
+  font-weight: normal;
 }
 
 h1,
@@ -320,7 +321,7 @@ a img {
   font-size: 13px;
   font-weight: normal;
   height: 80px;
-  line-height: 84px;
+  line-height: 80px;
   margin: 0px 2px;
 }
 
@@ -356,23 +357,23 @@ a img {
 .nav>li>a::before{
   content: "";
   width: 0px;
-  left: 10%;
-  bottom: 10px;
+  left: 15%;
+  bottom: 25px;
   height: 2px;
-  background-color: #ffa200;
+  background-color: #DE6C27;
   position: absolute;
   z-index: 2;
   transition: all .5s ease-in;
 }
 .nav>li:hover>a {
-  color: #ffa200;
+  color: #DE6C27;
 }
 .nav>li:hover>a::before, .nav>li.active>a::before{
-  width: 80%;
+  width: 73%;
   transition: all .5s ease-in;
 }
 .nav>li.active>a {
-  color: #ffa200;
+  color: #DE6C27;
   
   
 }
@@ -2201,8 +2202,9 @@ article-prev {
 
 }
 .header-fixed .nav>li {
-  height: 60px;
-  line-height: 62px;
+  height: 80px;
+  line-height: 84
+  px;
 }
 
 .header-fixed .logo {
@@ -2506,6 +2508,7 @@ font-family: exo-l;
 {
   color: #D96926;
   transition: all .5s ease-in;
+  text-transform: uppercase;
 }
 .btn-xemthem:hover{
   letter-spacing: 1px;
@@ -3245,4 +3248,31 @@ h1{
   border: 1px solid #9d9d9d;
   margin-left: 10px;
   text-align: center;
+}
+
+.news-list .news-title, .listnews-intro
+{
+  padding: 10px 15px 0px 15px;
+
+}
+.news-hot
+{
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+}
+.newhot-txt
+{
+  padding: 30px;
+}
+.news-hot .news-item
+{
+  margin-bottom: 0px;
+}
+.news-hot  .news-title 
+{
+  padding: 0px;
+}
+.news-hot .news-date
+{
+  left: 85%;
 }
