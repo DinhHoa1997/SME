@@ -3195,7 +3195,7 @@ h1{
   text-align: center;
   padding: 15px 0px;
   font-size: 16px;
-  
+  z-index: 2;
   
 }
 .news-title
@@ -3275,4 +3275,24 @@ h1{
 .news-hot .news-date
 {
   left: 85%;
+}
+.new-imggalleries
+{
+  position: relative;
+}
+.newsdetail-title,.newother-title
+{
+  font-size: 40px;
+  font-family: exo-l;
+  color: #0061A7;
+  text-transform: uppercase;
+  margin: 0px;
+} 
+.newother
+{
+  margin-left: 30px;
+}
+.newother .btn-xemthem
+{
+  margin-left: 20px;
 }
